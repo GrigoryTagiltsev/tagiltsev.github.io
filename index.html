@@ -1,53 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grigory Tagiltsev</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            margin: 40px auto;
-            max-width: 700px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
-        }
-        h1 {
-            font-weight: normal;
-            font-size: 2em;
-        }
-        .links a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
-            font-size: 1.5em;
-            transition: color 0.2s ease;
-        }
-        .links a:hover {
-            color: #0077b5; /* default hover color for LinkedIn */
-        }
-        .links a.orcid:hover {
-            color: #A6CE39; /* ORCID green */
-        }
-        .links a.scholar:hover {
-            color: #4285F4; /* Google blue */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grigory Tagiltsev - Postdoc in Biology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: white;
+      color: #111;
+      text-align: center;
+      padding: 60px 20px;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.8em;
+      margin-bottom: 0.1em;
+    }
+    p.title {
+      font-weight: 300;
+      font-size: 1.3em;
+      margin-top: 0;
+      margin-bottom: 1.8em;
+      color: #666;
+    }
+    /* Links container */
+    .links {
+      margin-bottom: 30px;
+    }
+    .links a {
+      color: #0071e3;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+      font-size: 1.4em; /* icon size */
+      display: inline-block;
+      vertical-align: middle;
+      transition: color 0.3s ease;
+    }
+    .links a:hover {
+      color: #004a9f;
+      text-decoration: none;
+    }
+    a.cv-link {
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-left: 24px;
+      color: #0071e3;
+      vertical-align: middle;
+    }
+    a.cv-link:hover {
+      text-decoration: underline;
+    }
+    section {
+      text-align: left;
+      margin-top: 40px;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+    ul.publications {
+      padding-left: 20px;
+      list-style-type: disc;
+      color: #222;
+    }
+    ul.publications li {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
+  <img src="photo.jpg" alt="Grigory Tagiltsev" />
+  <h1>Grigory Tagiltsev</h1>
+  <p class="title">Postdoctoral Researcher in Biology</p>
+  
+  <div class="links">
+    <a href="https://www.linkedin.com/in/grigory-tagiltsev" target="_blank" rel="noopener" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://orcid.org/0000-0002-9312-2108" target="_blank" rel="noopener" title="ORCID">
+      <i class="fab fa-orcid"></i>
+    </a>
+    <a href="https://scholar.google.com/citations?user=VsrVJW0AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">
+      <i class="fas fa-graduation-cap"></i>
+    </a>
+    <a href="cv.pdf" target="_blank" rel="noopener" class="cv-link">Download CV</a>
+  </div>
 
-    <h1>Grigory Tagiltsev</h1>
-    <p>Welcome to my personal website.</p>
+  <section>
+    <h2>Selected Publications</h2>
+    <ul class="publications">
+      <li><strong>Paper Title 1</strong>, Journal Name, Year. <a href="https://linktopaper1.com" target="_blank" rel="noopener">Link</a></li>
+      <li><strong>Paper Title 2</strong>, Journal Name, Year. <a href="https://linktopaper2.com" target="_blank" rel="noopener">Link</a></li>
+      <li><strong>Paper Title 3</strong>, Journal Name, Year. <a href="https://linktopaper3.com" target="_blank" rel="noopener">Link</a></li>
+    </ul>
+  </section>
 
-    <div class="links">
-        <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://orcid.org/YOUR-ID" class="orcid" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
-        <a href="https://scholar.google.com/citations?user=YOUR-ID" class="scholar" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-    </div>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tagiltsev@biochem.mpg.de">tagiltsev@biochem.mpg.de</a></p>
+  </section>
 
+  <footer>
+    © 2025 Grigory Tagiltsev
+  </footer>
 </body>
 </html>
