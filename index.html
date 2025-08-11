@@ -11,90 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"
   />
-  <style>
-    body {
-      font-family: 'Inter', Arial, sans-serif;
-      background: white;
-      color: #111;
-      text-align: center;
-      padding: 60px 20px;
-      margin: 0 auto;
-      max-width: 600px;
-    }
-    img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-weight: 600;
-      font-size: 2.8em;
-      margin-bottom: 0.1em;
-    }
-    p.title {
-      font-weight: 300;
-      font-size: 1.3em;
-      margin-top: 0;
-      margin-bottom: 1.8em;
-      color: #666;
-    }
-    /* Links container */
-    .links {
-      margin-bottom: 30px;
-    }
-    .links a {
-      color: #0071e3;
-      text-decoration: none;
-      margin: 0 14px;
-      font-weight: 500;
-      font-size: 1.4em; /* icon size */
-      display: inline-block;
-      vertical-align: middle;
-      transition: color 0.3s ease;
-    }
-    .links a:hover {
-      color: #004a9f;
-      text-decoration: none;
-    }
-    a.cv-link {
-      font-size: 1.1em;
-      font-weight: 500;
-      margin-left: 24px;
-      color: #0071e3;
-      vertical-align: middle;
-    }
-    a.cv-link:hover {
-      text-decoration: underline;
-    }
-    section {
-      text-align: left;
-      margin-top: 40px;
-    }
-    h2 {
-      font-weight: 600;
-      font-size: 1.6em;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-    }
-    ul.publications {
-      padding-left: 20px;
-      list-style-type: disc;
-      color: #222;
-    }
-    ul.publications li {
-      margin-bottom: 10px;
-      font-size: 1em;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #999;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <img src="photo.jpg" alt="Grigory Tagiltsev" />
@@ -122,7 +39,7 @@
     </p>
     
     <h2>Education & Experience</h2>
-    <ul style="list-style: none; padding-left: 0; color: #333; font-size: 1em;">    
+    <ul class="edu-exp-list">    
       <li><strong>2022–Present</strong> — Postdoctoral Researcher, Max Planck Institute of Biochemistry (Advisor: John Briggs)</li>
       <li><strong>2016-2021</strong> — Ph.D. in Genetics, Weill Cornell Medicine/Cornell University (Advisor: Simon Scheuring)</li>
       <li><strong>2010-2015</strong> — Specialist (equivalent to Bachelor + Master) in Chemistry, Moscow State University</li>
