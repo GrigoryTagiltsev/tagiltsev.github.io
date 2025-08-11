@@ -1,80 +1,89 @@
-/* Base styles */
 body {
   font-family: 'Inter', Arial, sans-serif;
   background: white;
-  color: #222;
-  padding: 50px 20px;
+  color: #111;
+  text-align: center;
+  padding: 60px 20px;
   margin: 0 auto;
-  max-width: 700px;
-  line-height: 1.6;
+  max-width: 600px;
 }
 
-/* Layout container */
 .header-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* stacked on mobile */
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-/* Text + image adjustments */
 .text-content {
-  text-align: center;
+  /* no special styles on mobile */
 }
 
 img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Headings */
 h1 {
-  font-family: 'Source Serif Pro', serif;
   font-weight: 600;
-  font-size: 2.2em;
-  margin-bottom: 0.2em;
-  color: #111;
+  font-size: 2.8em;
+  margin-bottom: 0.1em;
 }
 
 p.title {
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-top: 0;
-  margin-bottom: 1.4em;
+  margin-bottom: 1.8em;
   color: #666;
-  letter-spacing: 0.5px;
 }
 
 /* Links container */
 .links {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .links a {
-  color: #555;
-  margin: 0 12px;
-  font-size: 1.3em;
+  color: #0071e3;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 500;
+  font-size: 1.4em; /* icon size */
+  display: inline-block;
+  vertical-align: middle;
   transition: color 0.3s ease;
 }
 
 .links a:hover {
-  color: #111;
+  color: #004a9f;
+  text-decoration: none;
 }
 
-/* Sections */
+a.cv-link {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 24px;
+  color: #0071e3;
+  vertical-align: middle;
+}
+
+a.cv-link:hover {
+  text-decoration: underline;
+}
+
 section {
+  text-align: left;
   margin-top: 40px;
 }
 
 h2 {
-  font-family: 'Source Serif Pro', serif;
   font-weight: 600;
-  font-size: 1.4em;
-  margin-bottom: 12px;
+  font-size: 1.6em;
+  margin-bottom: 10px;
   border-bottom: 1px solid #eee;
   padding-bottom: 6px;
 }
@@ -83,27 +92,30 @@ h2 {
   list-style: none;
   padding-left: 0;
   color: #333;
-  font-size: 0.97em;
+  font-size: 1em;
 }
 
 .edu-exp-list li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
   margin-top: 50px;
-  font-size: 0.85em;
+  font-size: 0.9em;
   color: #999;
-  text-align: center;
 }
 
-/* Desktop layout */
+/* Desktop layout: text left, image right */
 @media (min-width: 768px) {
+  body {
+    max-width: 700px;
+  }
+
   .header-container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 auto 40px auto;
     text-align: left;
   }
 
