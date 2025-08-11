@@ -8,6 +8,17 @@ body {
   max-width: 600px;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column; /* stacked on mobile */
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.text-content {
+  /* no special styles on mobile */
+}
+
 img {
   width: 200px;
   height: 200px;
@@ -92,4 +103,28 @@ footer {
   margin-top: 50px;
   font-size: 0.9em;
   color: #999;
+}
+
+/* Desktop layout: text left, image right */
+@media (min-width: 768px) {
+  body {
+    max-width: 700px;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px auto;
+    text-align: left;
+  }
+
+  .text-content {
+    flex: 1;
+    margin-right: 30px;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
 }
