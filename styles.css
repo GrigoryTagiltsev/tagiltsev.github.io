@@ -150,3 +150,15 @@ footer {
 .btn-download-cv:hover {
   background-color: #005bb5;
 }
+
+.other-activities-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.other-activities-list strong {
+  color: #0073e6; /* match your brand color */
+}
+
