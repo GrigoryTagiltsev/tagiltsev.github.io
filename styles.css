@@ -131,3 +131,22 @@ footer {
     margin-bottom: 0;
   }
 }
+
+
+.btn-download-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #0073e6;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+  background-color: #005bb5;
+}
